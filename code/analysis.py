@@ -3,8 +3,8 @@ from correlation_analysis import analyze_correlations  # Assuming correlation_an
 
 def main():
   get_citations()
-  analyze_correlations(2022)
-  analyze_correlations(2023)
+  correlations_analysis(2022)
+  correlations_analysis(2023)
 
 if __name__ == "__main__":
   main()
