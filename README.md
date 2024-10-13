@@ -70,7 +70,7 @@ For the reasons explained, we considered SC2022. The sources of our datasets and
 
 ## Artifact Installation and Execution Process
 
-### Installation and Compilation Process
+### Installation, Compilation, and Execution Process
 
 The artifact can be installed by following these steps:
 
