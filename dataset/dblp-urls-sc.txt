@@ -1,2 +1,0 @@
-https://dblp.uni-trier.de/search/publ/api?q=toc%3Adb/conf/sc/sc2022.bht%3A&h=1000&format=json
-https://dblp.uni-trier.de/search/publ/api?q=toc%3Adb/conf/sc/sc2023.bht%3A&h=1000&format=json
