@@ -1,0 +1,7 @@
+test,comparison,statistic,p_value,adjusted_p_value,effect_size,effect_size_name,n_1,n_2,n_total,status,interpretation,notes
+Spearman rank correlation,Ordinal badge level vs citations,-0.01202887318916739,0.9114328445347747,,,,,,88.0,computed,No statistically detectable monotonic association at alpha=0.05.,"Badge level is encoded as No badge=0, Available only=1, Functional only=2, Replicable=3."
+Kruskal-Wallis H,Citations across mutually exclusive badge categories,3.426865068703888,0.33037208295496573,,,,,,88.0,computed,No statistically detectable difference across badge categories at alpha=0.05.,Omnibus non-parametric test across the four mutually exclusive badge categories.
+Mann-Whitney U,Replicable vs No badge,442.0,0.7128641770547733,,,,36.0,26.0,,computed,No statistically detectable difference between the two groups at alpha=0.05.,Pre-specified conservative comparison between the highest badge level and no recorded badge.
+Cliff's delta,Replicable vs No badge,,,,-0.05555555555555555,Cliff's delta,36.0,26.0,,computed,Effect size only; positive values mean Replicable citation counts tend to be larger than No badge.,
+Kolmogorov-Smirnov,Replicable vs No badge,0.11538461538461539,0.9683510842397156,,,,36.0,26.0,,computed,No statistically detectable difference between the two groups at alpha=0.05.,Secondary/exploratory distributional check.
+Post-hoc pairwise tests,All badge categories,,,,,,,,,skipped,Skipped because the Kruskal-Wallis omnibus test was not significant at alpha=0.05.,

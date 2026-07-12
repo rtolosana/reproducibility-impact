@@ -1,0 +1,162 @@
+{
+  "snapshot": "sc2022_nov2023",
+  "citation_window": "November 2023",
+  "citation_file": "dataset/data-nov-2023/sc2022_citations.csv",
+  "badge_file": "dataset/sc2022_reproducibility.csv",
+  "merge_diagnostics": {
+    "citation_rows": 88,
+    "badge_rows": 87,
+    "present_in_both": 87,
+    "only_in_citations": 1,
+    "only_in_badge_file": 0
+  },
+  "group_counts": {
+    "No badge": 26,
+    "Available only": 13,
+    "Functional only": 13,
+    "Replicable": 36
+  },
+  "statistical_tests": [
+    {
+      "test": "Spearman rank correlation",
+      "comparison": "Ordinal badge level vs citations",
+      "statistic": 0.04393962059085545,
+      "p_value": 0.6843804014842562,
+      "adjusted_p_value": null,
+      "effect_size": null,
+      "effect_size_name": null,
+      "n_1": null,
+      "n_2": null,
+      "n_total": 88.0,
+      "status": "computed",
+      "interpretation": "No statistically detectable monotonic association at alpha=0.05.",
+      "notes": "Badge level is encoded as No badge=0, Available only=1, Functional only=2, Replicable=3."
+    },
+    {
+      "test": "Kruskal-Wallis H",
+      "comparison": "Citations across mutually exclusive badge categories",
+      "statistic": 2.2230909853949306,
+      "p_value": 0.5274144997145862,
+      "adjusted_p_value": null,
+      "effect_size": null,
+      "effect_size_name": null,
+      "n_1": null,
+      "n_2": null,
+      "n_total": 88.0,
+      "status": "computed",
+      "interpretation": "No statistically detectable difference across badge categories at alpha=0.05.",
+      "notes": "Omnibus non-parametric test across the four mutually exclusive badge categories."
+    },
+    {
+      "test": "Mann-Whitney U",
+      "comparison": "Replicable vs No badge",
+      "statistic": 490.5,
+      "p_value": 0.743144062736561,
+      "adjusted_p_value": null,
+      "effect_size": null,
+      "effect_size_name": null,
+      "n_1": 36.0,
+      "n_2": 26.0,
+      "n_total": null,
+      "status": "computed",
+      "interpretation": "No statistically detectable difference between the two groups at alpha=0.05.",
+      "notes": "Pre-specified conservative comparison between the highest badge level and no recorded badge."
+    },
+    {
+      "test": "Cliff's delta",
+      "comparison": "Replicable vs No badge",
+      "statistic": null,
+      "p_value": null,
+      "adjusted_p_value": null,
+      "effect_size": 0.04807692307692308,
+      "effect_size_name": "Cliff's delta",
+      "n_1": 36.0,
+      "n_2": 26.0,
+      "n_total": null,
+      "status": "computed",
+      "interpretation": "Effect size only; positive values mean Replicable citation counts tend to be larger than No badge.",
+      "notes": null
+    },
+    {
+      "test": "Kolmogorov-Smirnov",
+      "comparison": "Replicable vs No badge",
+      "statistic": 0.11752136752136752,
+      "p_value": 0.9634413284575102,
+      "adjusted_p_value": null,
+      "effect_size": null,
+      "effect_size_name": null,
+      "n_1": 36.0,
+      "n_2": 26.0,
+      "n_total": null,
+      "status": "computed",
+      "interpretation": "No statistically detectable difference between the two groups at alpha=0.05.",
+      "notes": "Secondary/exploratory distributional check."
+    },
+    {
+      "test": "Post-hoc pairwise tests",
+      "comparison": "All badge categories",
+      "statistic": null,
+      "p_value": null,
+      "adjusted_p_value": null,
+      "effect_size": null,
+      "effect_size_name": null,
+      "n_1": null,
+      "n_2": null,
+      "n_total": null,
+      "status": "skipped",
+      "interpretation": "Skipped because the Kruskal-Wallis omnibus test was not significant at alpha=0.05.",
+      "notes": null
+    }
+  ],
+  "descriptive_statistics": [
+    {
+      "BadgeCategory": "No badge",
+      "n": 26,
+      "mean": 1.7307692307692308,
+      "median": 1.0,
+      "std": 2.9059620411518425,
+      "min": 0,
+      "q25": 0.0,
+      "q75": 2.0,
+      "IQR": 2.0,
+      "max": 13
+    },
+    {
+      "BadgeCategory": "Available only",
+      "n": 13,
+      "mean": 1.2307692307692308,
+      "median": 1.0,
+      "std": 1.5892265495016833,
+      "min": 0,
+      "q25": 0.0,
+      "q75": 2.0,
+      "IQR": 2.0,
+      "max": 5
+    },
+    {
+      "BadgeCategory": "Functional only",
+      "n": 13,
+      "mean": 1.6153846153846154,
+      "median": 2.0,
+      "std": 1.12089707663561,
+      "min": 0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "IQR": 1.0,
+      "max": 4
+    },
+    {
+      "BadgeCategory": "Replicable",
+      "n": 36,
+      "mean": 1.3055555555555556,
+      "median": 1.0,
+      "std": 1.4105610726524886,
+      "min": 0,
+      "q25": 0.0,
+      "q75": 2.0,
+      "IQR": 2.0,
+      "max": 6
+    }
+  ],
+  "supported_claim": "The analysis evaluates whether a statistically detectable association is observed between SC 2022 badge level and citation count in this citation snapshot. It does not estimate a causal effect."
+}

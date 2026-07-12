@@ -8,14 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir \
-    pandas \
-    scipy \
-    matplotlib \
-    seaborn \
-    requests \
-    pyalex
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Set the default command to run the python script manually
 CMD ["/bin/bash"]
-
